@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <title>Formulário de Registro</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Formulário de Registro</h1>
+        <p>Por favor, preencha este formulário com as inforações necessárias</p>
+        <form action="https://github.com/DevCorrea86/arquivos-csv-html" method="post">
+            <fieldset>
+                <label for="primeiro-nome">Primeiro Nome: <input id="primeiro-nome" type="text" name="Nome" required></label>
+                <label for="ultimo-nome">Último Nome: <input id='ultimo-nome' type="text" name="Sobrenome" required></label>
+                <label for="email">Email: <input id="email" type='email' name="Email" required></label>
+                <label for="nova-senha">Nova Senha: <input id="nova-senha" name="Senha" type="password" pattern='[a-z0-5]{8,}' required></label>
+            </fieldset>
+            <fieldset>
+                <label for="conta-pessoal"><input class="inline" type="radio" name="account-type" id="conta-pessoal"> Conta Pessoal</label>
+                <label for="conta-empresarial"><input class="inline" type="radio" name="account-type" id="conta-empresarial"> Conta Empresarial</label>
+                <label for="termos-e-condicoes"><input class="inline" type="checkbox" id="termos-e-condicoes" name="termos" required> Aceito os termos e condições  <a href="https://www.freecodecamp.org/news/terms-of-service/">Termos e Condições</a></label>
+            </fieldset>
+            <fieldset>
+                <label for="foto">Upload Foto: <input type="file" id="foto" name="
+                    Foto"></label>
+                <label for="idade">Qual sua idade (anos): <input type="number" id="idade" name="Idade" min="18" max="120"></label>
+                <label for="referencia">Como ficou sabendo de nós?
+                    <select name="Referencia" id="referencia">
+                        <option value="">SELECIONE UMA</option>
+                        <option value="1">Instagram</option>
+                        <option value="2">TikTok</option>
+                        <option value="3">Amigos</option>
+                        <option value="4">Outros</option>
+                    </select>
+                </label>
+                <label for="bio">Bio:<textarea name="Bio" id="bio" cols="30" rows="3" placeholder="Eu curto futebol ..."></textarea></label>
+            </fieldset>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
